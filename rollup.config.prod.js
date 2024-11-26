@@ -1,10 +1,10 @@
-import {default as defaultConfig} from './rollup.config';
-import {uglify} from "rollup-plugin-uglify";
+import { default as defaultConfig } from './rollup.config';
+import terser from "@rollup/plugin-terser";
 
 export default {
     ...defaultConfig,
     plugins: [
         ...defaultConfig.plugins,
-        uglify({sourcemap: false})
+        terser({ format: { comments: false } }) // equivalent to uglify
     ]
 };

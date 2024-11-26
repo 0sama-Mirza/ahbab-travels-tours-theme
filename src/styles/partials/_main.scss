@@ -11,7 +11,8 @@ body > main {
     }
 
     &.primary {
-      background-color: var(--primary);
+      background-color: #000;
+      // background-color: var(--primary);
       color: var(--primary-txt);
     }
 

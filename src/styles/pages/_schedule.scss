@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .section.schedule {
 
   .hero {
@@ -244,7 +246,7 @@
       grid-column: 1 / 2;
       --start: calc(1 + var(--row-start));
       --end: calc(1 + var(--row-end));
-      grid-row: var(--start) / var(--end);
+      grid-row: math.div(var(--start), var(--end));
 
       background-color: var(--color-hero);
     }
@@ -266,7 +268,7 @@
       --end: calc(1 + var(--row-end));
 
       grid-column: calc(var(--room) + 2);
-      grid-row: var(--start) / var(--end);
+      grid-row: math.div(var(--start), var(--end));
 
       &.tag-pause {
         z-index: 0;
@@ -347,7 +349,7 @@
       grid-row: 1 / 2;
       --start: calc(1 + var(--row-start));
       --end: calc(1 + var(--row-end));
-      grid-column: var(--start) / var(--end);
+      grid-column: math.div(var(--start), var(--end));
 
       background-color: var(--color-hero);
     }
@@ -372,7 +374,7 @@
       --end: calc(1 + var(--row-end));
 
       grid-row: calc(var(--room) + 2);
-      grid-column: var(--start) / var(--end);
+      grid-column: math.div(var(--start), var(--end));
 
       &.tag-open, &.tag-pause, &.tag-lunch, &.tag-party {
         grid-row: 2 / -1;

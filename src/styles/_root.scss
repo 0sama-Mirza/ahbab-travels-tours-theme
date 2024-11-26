@@ -1,60 +1,64 @@
 :root {
-  --primary: #1976d2;
-  --primary-txt: #fff;
+  /* Main color scheme */
+  --primary: #1a1a1a; /* Deep black to represent the Kaaba */
+  --primary-txt: #ffd700; /* Gold for primary text and accents */
+  
+  --accent: #ffd700; /* Golden accents */
+  --accent-txt: #1a1a1a; /* Black text on gold accent areas */
 
-
-  --accent: grey;
-  --accent-txt: #fff;
-
-  --base: #FFF;
-  --base-text: #424242;
-  --base-secondary-text: #636363;
-  --link-secondary-text: #424242;
-  --toc-text: var(--primary);
+  --base: #1a1a1a; /* Black background as a base */
+  --base-text: #e0e0e0; /* Light grey for main text readability */
+  --base-secondary-text: #b3b3b3; /* Muted grey for secondary text */
+  --link-secondary-text: #ffd700; /* Gold for links, reflecting embellishments */
+  --toc-text: var(--accent); /* Gold for table of contents text */
 
   --darken-1: rgba(0, 0, 0, .125);
   --darken-2: rgba(0, 0, 0, .25);
   --darken-3: rgba(0, 0, 0, .5);
 
-  --lighten-1: hsla(0, 100%, 100%, .125);
+  --lighten-1: hsla(0, 100%, 100%, .1);
   --lighten-2: hsla(0, 100%, 100%, .25);
   --lighten-3: hsla(0, 100%, 100%, .5);
 
-  --color-hero: ghostwhite;
+  --color-hero: #1a1a1a; /* Black for main hero section */
 
-  --color-platium: #73737a;
-  --color-gold: #b7935b;
+  --color-platinum: #666666; /* Muted grey, complementing gold and black */
+  --color-gold: #ffd700; /* Gold, matching kiswah’s decorative color */
   --color-error: firebrick;
 
+  /* Spacing variables remain the same */
   --space-1: .125rem;
   --space-2: .25rem;
   --space-3: .5rem;
   --space-4: 1rem;
 
+  /* Other styles remain the same */
   --theJdrSize: 1100px;
   --block-text-max-width: 60rem;
 
+  /* Breakpoints */
   --breakpoint-sm: 34.375rem; // 540px
   --breakpoint-md: 45rem; // 720px
   --breakpoint-lg: 60rem; // 960px
   --breakpoint-xl: 71.25rem; // 1140px
 
+  /* Containers */
   --container-margin: 10vw;
   --container-margin-mobile: 3vw;
   --toolbar-height: 3.25rem;
 
+  /* Font */
   --font-family: 'Roboto', sans-serif;
 
   /* Tags */
-  /*from https://github.com/d3/d3-scale-chromatic#schemePastel2*/
-  --tag1: #b3e2cd;
-  --tag2: #fdcdac;
-  --tag3: #cbd5e8;
+  --tag1: #ffd700; /* Gold tone for consistency */
+  --tag2: #b3b3b3;
+  --tag3: #666666;
   --tag4: #f4cae4;
-  --tag5: #e6f5c9;
-  --tag6: #fff2ae;
-  --tag7: #f1e2cc;
-  --tag8: #cccccc;
+  --tag5: #1a1a1a;
+  --tag6: #ffd700;
+  --tag7: #cccccc;
+  --tag8: #333333;
 
   --native-mobile-apps: var(--tag2);
   --web: var(--tag6);
@@ -66,8 +70,9 @@
   --wtf: var(--tag7);
   --general: var(--tag8);
 
-  --office-hours: floralwhite;
-  --keynote: paleturquoise;
+  /* Section themes */
+  --office-hours: #1a1a1a;
+  --keynote: #ffd700;
 
   /* Jumbo section */
   --jumbo-logo-width: 800px;
@@ -78,54 +83,59 @@
   --partner-platinum-height: calc(var(--partner-support-height) * 3);
   --partner-gold-height: calc(var(--partner-support-height) * 2);
 
+  /* Animation */
   --animation: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
+  /* Text Extrusion */
   --extruded-dark: 1px 0 0 var(--darken-3);
   --extruded-light: 1px 0 0 var(--lighten-3);
 
+  /* Shadows */
   --box-shadow-1: 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
   --box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
 
-  /* Mark */
-  --fg-mark-a: white;
-  --bg-mark-a: #fb2c17;
+  /* Mark highlights */
+  --fg-mark-a: #1a1a1a;
+  --bg-mark-a: #ffd700;
 
-  --fg-mark-b: black;
-  --bg-mark-b: #ffcc00;
+  --fg-mark-b: #1a1a1a;
+  --bg-mark-b: #ffd700;
 
-  --fg-mark-t2: white;
-  --bg-mark-t2: #11a7e0;
+  --fg-mark-t2: #e0e0e0;
+  --bg-mark-t2: #333333;
 
   /* Schedule */
   --base-grid-height: 4.5em;
 
   /* Footer */
-  --footer-bg: #222;
-  --footer-fg: #8a8a8a;
+  --footer-bg: #111111;
+  --footer-fg: #e0e0e0;
 }
 
-
-// Dark theme
+/* Dark Theme */
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --base: #222;
+    --base: #111;
     --base-text: #ddd;
-    --primary: #0d47a1;
+    --primary: #000; /* Even darker black for Kaaba nighttime vibes */
 
-    --toc-text: #64b5f6;
+    --toc-text: #ffd700; /* Gold for table of contents links */
 
-    --color-hero: #181818;
+    --color-hero: #111; /* Dark base */
 
-    --lighten-1: rgba(0, 0, 0, .125);
-    --lighten-2: rgba(0, 0, 0, .25);
-    --lighten-3: rgba(0, 0, 0, .5);
+    /* Muted whites for overlays and darkening effects */
+    --lighten-1: rgba(255, 255, 255, 0.1);
+    --lighten-2: rgba(255, 255, 255, 0.2);
+    --lighten-3: rgba(255, 255, 255, 0.4);
 
-    --darken-1: hsla(0, 100%, 100%, .125);
-    --darken-2: hsla(0, 100%, 100%, .25);
-    --darken-3: hsla(0, 100%, 100%, .5);
+    --darken-1: rgba(0, 0, 0, 0.1);
+    --darken-2: rgba(0, 0, 0, 0.25);
+    --darken-3: rgba(0, 0, 0, 0.5);
 
+    /* Footer */
     --footer-bg: #000;
-    --footer-fg: #777;
+    --footer-fg: #888;
   }
 }
+

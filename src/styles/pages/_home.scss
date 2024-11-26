@@ -1,5 +1,4 @@
 .home main {
-
   & > section {
     margin: 0;
     padding: 4rem;
@@ -14,7 +13,6 @@
   }
 
   .info {
-
     .wrapper {
       display: grid;
       margin: 0 auto;
@@ -50,13 +48,12 @@
       justify-self: center;
       min-width: 14ch;
       strong {
-        font-size: 3.5rem;
-        font-weight: 100;
+        // font-weight: 100;
 
         &::after {
-          content: '';
+          content: "";
           display: block;
-          height: .125rem;
+          height: 0.125rem;
           width: 2rem;
           background-color: var(--darken-3);
         }
@@ -89,7 +86,7 @@
       }
 
       // Keep only 4 first speakers
-      li:nth-child(n+5) {
+      li:nth-child(n + 5) {
         display: none;
       }
     }
@@ -148,7 +145,7 @@
     .map {
       display: block;
 
-      &> * {
+      & > * {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -182,7 +179,7 @@
   }
 }
 
-@supports (grid-template-columns: repeat(auto-fit,minmax(25vmin,1fr))) {
+@supports (grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr))) {
   .home main .info .numbers {
     justify-content: center;
     display: grid;
