@@ -1,7 +1,7 @@
 name = "Ahbah Travel And Tours Theme"
 license = "MIT"
 licenselink = "https://github.com/0sama-Mirza/ahbab-travels-tours-theme/LICENSE"
-description = "A theme for a travel agency"
+description = "A theme for a travel agency, with mecca theme"
 homepage = "https://github.com/0sama-Mirza/ahbab-travels-tours-theme"
 tags = ["conference", "DevFest", "ahbab", "travel"]
 features =  ["conference", "responsive", "l10n", "google-analytics"]
