@@ -32,7 +32,7 @@ other = "Share"
 other = "Share on Facebook"
 
 [twitter_share_text]
-other = "Come join us at @DevFestToulouse the unavoidable conference for Software developers in Toulouse, France #DevFestToulouse"
+other = "If your located at the twin cities of Pakistan and want to embark on the holy pilgrimage then look no further! Ahbab Travel And Tours is here to help. Go to https://atathu.page.dev to start your journey NOW!"
 
 [twitter_share_label]
 other = "Share on Twitter"
@@ -72,4 +72,10 @@ other = "Newsletter"
 other = "No spam, only the latest news and updates!"
 
 [subscribe_action]
-other = "Subscribe"
+other = "Start Your Journey Now!"
+
+################
+#   Contact   #
+################
+[footer_contact]
+other = "Contact"
